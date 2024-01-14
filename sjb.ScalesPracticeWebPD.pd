@@ -1,4 +1,4 @@
-#N canvas 510 269 439 666 10;
+#N canvas 614 329 439 637 10;
 #X obj 24 109 vsl 16 136 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 50 240 Drone Volume;
 #X obj 139 417 vradio 16 1 1 4 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0;
@@ -6,7 +6,6 @@
 #X text 70 75 Change Note;
 #X obj 137 57 tgl 35 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 182 75 Metronome On/Off;
-#X floatatom 137 108 5 20 500 0 - - - 0;
 #X text 183 118 Tempo (BPM);
 #X text 166 425 Circle of 5ths Up;
 #X text 166 441 Circle of 5ths Down;
@@ -382,10 +381,11 @@
 #X text 50 443 A;
 #X text 50 459 A#/Bb;
 #X text 50 475 B;
-#X connect 0 0 13 0;
-#X connect 2 0 17 0;
-#X connect 3 0 14 0;
-#X connect 5 0 15 0;
-#X connect 7 0 16 0;
-#X connect 19 0 20 0;
-#X connect 21 0 22 0;
+#X obj 137 107 nbx 3 14 20 500 0 1 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 60 256;
+#X connect 0 0 12 0;
+#X connect 2 0 16 0;
+#X connect 3 0 13 0;
+#X connect 5 0 14 0;
+#X connect 18 0 19 0;
+#X connect 20 0 21 0;
+#X connect 39 0 15 0;
