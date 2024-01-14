@@ -6,12 +6,12 @@
 #X text 70 75 Change Note;
 #X obj 137 57 tgl 35 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X text 182 75 Metronome On/Off;
-#X text 183 118 Tempo (BPM);
+#X text 173 117 Tempo (BPM);
 #X text 166 425 Circle of 5ths Up;
 #X text 166 441 Circle of 5ths Down;
 #X text 166 457 Chromatic Up;
 #X text 166 473 Chromatic Down;
-#X obj 24 264 s droneVolume;
+#X obj 63 209 s droneVolume;
 #X obj 24 89 s changeNote;
 #X obj 291 58 s metronomeOnOff;
 #X obj 291 103 s tempo;
@@ -361,7 +361,7 @@
 #X connect 35 0 8 0;
 #X restore 163 576 pd metrodrone;
 #X obj 139 289 vradio 16 1 1 5 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 2;
-#X obj 171 389 s baseOctave;
+#X obj 204 325 s baseOctave;
 #X obj 24 289 vradio 16 1 1 12 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 10;
 #X obj 53 505 s baseNote;
 #X text 166 299 -2;
@@ -381,7 +381,11 @@
 #X text 50 443 A;
 #X text 50 459 A#/Bb;
 #X text 50 475 B;
-#X obj 137 107 nbx 3 14 20 500 0 1 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 60 256;
+#X obj 137 109 nbx 3 14 20 500 0 1 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 360.572 256;
+#X text 24 272 Base Note;
+#X text 139 272 Base Octave;
+#X text 140 400 Cycle Pattern;
+#X obj 27 132 hsl 136 16 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
 #X connect 0 0 12 0;
 #X connect 2 0 16 0;
 #X connect 3 0 13 0;
@@ -389,3 +393,4 @@
 #X connect 18 0 19 0;
 #X connect 20 0 21 0;
 #X connect 39 0 15 0;
+#X connect 43 0 12 0;
